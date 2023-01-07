@@ -1,25 +1,32 @@
-let total = document.querySelector(".js-attTotal");
-let strength = document.querySelector(".js-attStrength");
-let strengthButton = document.querySelector(".js-arrowStrength");
 
+let strength = 25;
 let level = 1;
-document.querySelector(".js-level").innerHTML = `${level}`;
+let total = 30;
+
+const setValues = () => {
+    document.querySelector(".js-attStrength").innerHTML = `${strength}`;
+    document.querySelector(".js-attTotal").innerHTML = `${total}`;
+    document.querySelector(".js-level").innerHTML = `${level}`;
+};
+
+setValues();
 
 const levelButton = document.querySelector(".js-arrowLevel").onclick = () => {
     if (level < 50) {
         level++;
+        total +=5;
     } else {
 
     }
-    document.querySelector(".js-level").innerHTML = `${level}`;
+    setValues();
 };
 
-
-strengthButton.addEventListener("click", () => {
-    if (strength.innerText < 38 + level * 2 && total.innerText > 0) {
-        strength.innerText++;
-        total.innerText--;
+const strengthButton = document.querySelector(".js-arrowStrength").onclick = () => {
+    if (strength < 38 + level * 2 && total > 0) {
+        strength++;
+        total--;
+        setValues();
     } else {
-        
-    }
-});
+
+    };
+}
