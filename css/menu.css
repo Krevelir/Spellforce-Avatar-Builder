@@ -1,0 +1,137 @@
+.menu {
+    background-image: url(../images/BackgroundSFlarge.png);
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: goldenrod;
+}
+
+.menu__title {
+    padding-top: 8px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.menu__character {
+    font-size: 20px;
+    padding: 20px 0px 0px 60px;
+    margin: 0px 450px 0px 90px;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 1fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr auto 2fr;
+    gap: 10px;
+}
+
+.menu__skillPointsName {
+    grid-column: 2 / span 2;
+    text-align: center;
+}
+
+.menu__attributePointsName {
+    grid-column: 5 / span 2;
+    text-align: center;
+}
+
+.menu__skillPoints {
+    text-align: right;
+}
+
+.menu__attributePoints {
+    text-align: right;
+}
+
+.menu__attPointsList {
+    padding-left: 0px;
+}
+
+.menu__attributes--title {
+    color: goldenrod;
+}
+
+.menu__attributesList {
+    color: aliceblue;
+    line-height: 110%;
+    padding-left: 0px;
+}
+
+.attribute {
+    list-style: none;
+    margin-bottom: 1px;
+}
+
+.attributePoint {
+    list-style: none;
+}
+
+.menu__attributeArrows {
+    padding-left: 0px;
+    padding-top: 5px
+}
+
+.menu__skillArrows {
+   padding-left: 0px;
+   padding-top: 4px;
+}
+
+.menu__skillsList {
+    padding-left: 0px;
+}
+.skill {
+    list-style: none;
+}
+
+.skillpoint {
+    list-style: none;
+}
+
+.menu__abilityButtonContainer {
+    align-self: end;
+}
+
+.menu__button {
+    background-color: beige;
+    text-transform: uppercase;
+    font-family: 'Uncial Antiqua';
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 12px;
+    transition: 1s;
+}
+
+.menu__button:hover {
+    background-color: hsl(60, 56%, 81%);
+    transform: scale(1.1);
+}
+
+.menu__arrows {
+    padding-top:3px;
+}
+
+.menu__arrowUP {
+    list-style: none;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid beige;
+    margin-bottom: 13px;
+    transition: 1s;
+}
+
+.menu__arrowUP:hover {
+    border-bottom: 10px solid hsl(60, 56%, 81%);
+    transform: scale(1.2);
+}
+
+.menu__attributePointsAmount {
+    font-size: 20px;
+    grid-column: 4 / span 2;
+    align-self: end;
+}
+
+.menu__attributePointsTotal {
+    color: blanchedalmond;
+}

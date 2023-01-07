@@ -1,0 +1,19 @@
+body {
+    background-color: grey;
+    background-image: url("../images/backgroundwall.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.header {
+    padding-top: 30px;
+    font-size: 50px;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: goldenrod;
+    text-shadow: 4px 4px 5px rgba(66, 68, 90, 1);
+    font-family: 'Uncial Antiqua', cursive;
+}
