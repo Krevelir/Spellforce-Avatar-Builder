@@ -5,23 +5,21 @@ let strengthButton = document.querySelector(".js-arrowStrength");
 let level = 1;
 document.querySelector(".js-level").innerHTML = `${level}`;
 
-const levelButton = document.querySelector(".js-arrowLevel");
-
-levelButton.addEventListener("click", () => {
+const levelButton = document.querySelector(".js-arrowLevel").onclick = () => {
     if (level < 50) {
         level++;
     } else {
-        level = 50;
+
     }
     document.querySelector(".js-level").innerHTML = `${level}`;
-});
+};
 
 
 strengthButton.addEventListener("click", () => {
-    if (strength.innerText < 38 + level * 2) {
+    if (strength.innerText < 38 + level * 2 && total.innerText > 0) {
         strength.innerText++;
         total.innerText--;
     } else {
-        strength = 38 + level*2;
+        
     }
 });
