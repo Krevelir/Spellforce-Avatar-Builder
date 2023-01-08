@@ -1,3 +1,5 @@
+/* Main elements */
+
 .menu {
     background-image: url(../images/BackgroundSFlarge.png);
     width: 1200px;
@@ -26,7 +28,9 @@
     gap: 10px;
 }
 
-.menu__skillPointsName {
+ /* First row */
+
+.menu__abilityPointsName {
     grid-column: 2 / span 2;
     text-align: center;
 }
@@ -36,71 +40,90 @@
     grid-column: 5 / span 2;
 }
 
-.menu__skillPoints {
-    text-align: right;
+/* Second row, first column (Abilities) */
+
+.menu__abilityList {
+    padding-left: 0px;
 }
 
-.menu__attributePoints {
-    text-align: right;
+.menu__ability {
+    list-style: none;
+}
+
+/* Second row, second column (Ability Level) */
+
+.menu__abilityPoint {
+    list-style: none;
+    color: cornsilk;
+}
+
+/* Second row, third column (Attribute Arrows) */
+
+.menu__abilityArrowsList {
+    padding-left: 0px;
+    padding-top: 8px;
+}
+
+
+.menu__arrow {  /* This class is used for other arrows too*/
+    list-style: none;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid blanchedalmond;
+    margin-bottom: 13px;
+    transition: 1s;
+}
+
+.menu__arrow:hover { /* This class is used for other arrows too*/
+    border-bottom: 10px solid hsl(36, 100%, 80%);
+    transform: scale(1.1);
+}
+
+/* Second row, fourth column (Attributes) */
+
+.menu__attributesList {
+    color: cornsilk;
+    line-height: 110%;
+    padding-left: 0px;
+    list-style: none;
 }
 
 .menu__attPointsList {
     padding-left: 0px;
 }
 
-.menu__attributes--title {
-    color: goldenrod;
-}
-
-.menu__attributesList {
-    color: aliceblue;
-    line-height: 110%;
-    padding-left: 0px;
-}
-
-.attribute {
-    list-style: none;
+.menu__attribute {
     margin-bottom: 1px;
 }
 
-.attributePoint {
+
+/* Second row, fifth column (Attribute Levels) */
+
+.menu__attPoint {
     list-style: none;
+    text-align: right;
+    color: cornsilk;
 }
+
+/* Second row, sixth column (Attribute Arrows) */
 
 .menu__attributeArrows {
     padding-left: 0px;
-    padding-top: 5px
+    padding-top: 7px;
 }
 
-.menu__skillArrows {
-    padding-left: 0px;
-    padding-top: 4px;
-}
+/* Third row , first column (new Skill Button) */
 
-.menu__skillsList {
-    padding-left: 0px;
-}
-
-.menu__skills {
-    grid-column: 1;
-}
-
-.skill {
-    list-style: none;
-}
-
-.skillpoint {
-    list-style: none;
-}
-
-.menu__abilityButtonContainer {
+.menu__buttonContainer {
     align-self: end;
     grid-column: 1;
     user-select: none;
 }
 
 .menu__button {
-    background-color: beige;
+    background-color: blanchedalmond;
     text-transform: uppercase;
     font-family: 'Uncial Antiqua';
     font-size: 15px;
@@ -110,44 +133,24 @@
 }
 
 .menu__button:hover {
-    background-color: hsl(60, 56%, 81%);
+    background-color: hsl(36, 100%, 80%);
     transform: scale(1.1);
 }
 
-.menu__arrows {
-    padding-top: 3px;
-}
+/* Third row , second and third column (Available Attribute Points) */
 
-.menu__arrowUP {
-    list-style: none;
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid beige;
-    margin-bottom: 13px;
-    transition: 1s;
-}
-
-.menu__arrowUP:hover {
-    border-bottom: 10px solid hsl(60, 56%, 81%);
-    transform: scale(1.2);
-}
-
-.menu__arrowUP--level {
-    padding-bottom: 10px;
-}
-
-.menu__attributePointsAmount {
+.menu__attributePointsTotal {
     user-select: none;
     font-size: 20px;
     grid-column: 3 / span 2;
     align-self: end;
 }
 
-.menu__attributePointsTotal {
+.menu__attributePointsAvailable {
     color: blanchedalmond;
 }
+
+/* Third row , fourth and fifth column (Character Level) */
 
 .menu__level {
     font-size: 20px;
@@ -156,27 +159,13 @@
     user-select: none;
 }
 
+.menu__level__number {
+    color: cornsilk;
+}
+
+/* Third row , sixth  column (Level Arrow) */
+
 .menu__level__arrow {
     align-self: end;
     padding-bottom: 12px;
-}
-
-.menu__level__number {
-    color: beige;
-}
-
-.menu__attribute__arrowUP {
-    list-style: none;
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid beige;
-    margin-bottom: 13px;
-    transition: 1s;
-}
-
-.menu__attribute__arrowUP:hover {
-    border-bottom: 10px solid hsl(60, 56%, 81%);
-    transform: scale(1.2);
 }
